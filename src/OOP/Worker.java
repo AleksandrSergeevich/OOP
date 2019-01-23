@@ -21,8 +21,8 @@ public class Worker {
         this.age = age;
     }
 
-    public String workerinfo(){
-        String pattern = "fullName: {0}, position: {1}, email:{2}, phone:{3}, salary:{4},  age:{5}";
+    public String workerInfo(){
+        String pattern = " {0},   {1},    {2},    {3},    {4},    {5}";
         return MessageFormat.format(pattern, this.fullName, this.position, this.email,
                                     this.phone, this.salary, this.age);
     }
@@ -74,4 +74,5 @@ public class Worker {
     public void setAge(int age) {
         this.age = age;
     }
+
 }
